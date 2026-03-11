@@ -134,8 +134,8 @@ Header tersebut berisi username dan password yang telah diencode menggunakan Bas
 
 # Lampiran
 ![HTTP GET Request](../assets/week2/week2(1).png)
-![HTTP Response 200 OK](../assets/week2/week1(2).png)
-![Conditional GET](../assets/week1/week2(3).png)
-![TCP Segment Response](../assets/week2/week1(4).png)
-![Multiple HTTP GET](../assets/week1/week2(5).png)
-![HTTP Authentication](../assets/week1/week2(6).png)
+![HTTP Response 200 OK](../assets/week2/week2(2).png)
+![Conditional GET](../assets/week2/week2(3).png)
+![TCP Segment Response](../assets/week2/week2(4).png)
+![Multiple HTTP GET](../assets/week2/week2(5).png)
+![HTTP Authentication](../assets/week2/week2(6).png)
