@@ -14,8 +14,6 @@ Memahami cara kerja protokol TCP menggunakan Wireshark, termasuk proses three-wa
 
 ## Percobaan Praktikum
 
-### 6.2
-
 #### Langkah - Langkah
 ### 6.2 
 
