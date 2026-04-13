@@ -30,6 +30,7 @@ Data yang diterima dari server masih dalam bentuk byte, sehingga perlu dikembali
 Terakhir, socket ditutup menggunakan `close()` untuk mengakhiri sesi komunikasi dan membebaskan resource yang digunakan. Penutupan ini penting agar tidak terjadi kebocoran resource pada sistem.
 
 Secara keseluruhan, alur kerja `UDPClient.py` adalah menerima input dari user, mengirimkan data ke server tanpa koneksi, menunggu respon, lalu menampilkan hasil yang diterima. Proses ini mencerminkan model komunikasi client-server sederhana dengan menggunakan protokol UDP yang ringan dan cepat.
+
 ![UDPClient](../assets/week7/week7(1).png)
 
 ## 2. UDPServer.py
@@ -57,6 +58,7 @@ Setelah pesan dimodifikasi, server mengubah kembali data tersebut ke dalam bentu
 Karena UDP tidak memiliki koneksi tetap, server tidak perlu menutup koneksi setelah mengirim respon. Server akan terus berjalan dan kembali ke awal loop untuk menunggu pesan berikutnya dari client lain atau client yang sama.
 
 Secara keseluruhan, alur kerja `UDPServer.py` adalah menerima data dari client, memproses isi pesan, lalu mengirimkan kembali hasilnya tanpa melalui proses koneksi. Hal ini menunjukkan karakteristik utama UDP yang sederhana, cepat, dan tidak memiliki mekanisme kontrol koneksi.
+
 ![UDPServer](../assets/week7/week7(2).png)
 
 ## 3. TCPClient.py
@@ -82,6 +84,7 @@ Data yang diterima masih dalam bentuk byte, sehingga perlu dikonversi kembali me
 Terakhir, koneksi ditutup menggunakan `close()`. Penutupan ini penting untuk mengakhiri sesi komunikasi dan membebaskan resource yang digunakan oleh socket.
 
 Secara keseluruhan, alur kerja `TCPClient.py` adalah membangun koneksi dengan server, mengirim data, menerima respon, lalu menutup koneksi. Proses ini mencerminkan karakteristik utama TCP yang lebih terstruktur dan reliable dibandingkan UDP karena adanya mekanisme koneksi dan pengiriman data yang terjamin.
+
 ![TCPClient](../assets/week7/week7(3).png)
 
 ## 4. TCPServer.py
@@ -111,6 +114,7 @@ Hasil pemrosesan tersebut kemudian diubah kembali ke bentuk byte menggunakan `en
 Setelah proses komunikasi selesai, server menutup koneksi dengan client menggunakan `connectionSocket.close()`. Meskipun koneksi dengan client ditutup, server utama tetap berjalan dan kembali ke awal loop untuk menunggu koneksi berikutnya.
 
 Secara keseluruhan, alur kerja `TCPServer.py` adalah menerima koneksi dari client, menerima dan memproses data, mengirimkan respon, lalu menutup koneksi. Proses ini mencerminkan karakteristik TCP yang connection-oriented, di mana setiap komunikasi harus melalui proses pembentukan dan penutupan koneksi secara terstruktur.
+
 ![TCPServer](../assets/week7/week7(4).png)
 
 ## Output Terminal
