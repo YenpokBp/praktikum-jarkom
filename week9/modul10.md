@@ -1,6 +1,6 @@
 # Laporan Praktikum Jaringan Komputer
 
-## Modul 6 – TCP
+## Modul 10 – IP
 
 **Nama:** Yustinus Yendy S.A  
 **NIM:** 103072400065  
